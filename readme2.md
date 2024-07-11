@@ -83,7 +83,10 @@ Include a UML class diagram illustrating the class structure and relationships w
 
 Here you can see the **UML representation** of the internal structure of the `interpret.php` script:
 
-```mermaid
+<!-- *************************************** -->
+<!-- MERMAID DIAGRAM SCRIPT BELOW -->
+<!-- *************************************** -->
+<!-- ```mermaid
 classDiagram
     class Interpreter {
     }
@@ -247,7 +250,9 @@ classDiagram
     }
 
     Frames *-- Frame
-```
+``` -->
+
+[![](https://mermaid.ink/img/pako:eNp9lllvGjEQgP-K5ZdKFaUpR6C8pUkaUTVVGtJDFVJkdoeyymJvbUNDo_z3jr0HZhmHh0DmG4_Hc9lPPFEp8AlPcmHMRSZ-a7GeS4YfL2FTaUEXGvAveyrB81yGGveXj5mNsDOd2dUabJZEFD4olYOQEXq-guShZoy9fcsSJzHMroBtRZ6lmd2xAKulR8bqTP4O5Isdy-wrXLcrgN5JyUTETnEhrJhZ0XLFeMlSaaYK0MJmShp6OSy3Iha9K7DJKkoziUfZJM52RAPz03vBwKfNusiW8OfAc5EbxT59u76Zfvxy-ZVcd622EDF5CyKNohzjEF05e_GsM6t7mbRxiim900IaDPl6X43-RBblTmxYColIsdxcWYcKip3NzqdTZnbrhcpNbI8cYoG-w9KJoB9Y5TH28_rzvVX3zp0jj03pMqo4_4Jc0-59dwUvLDj9o57wVpw9YSOLdSYWeTQ1GBYM7r6RveVCaAMGO61aK2TKcBRstMTStA7kmzDK2ZLhqDCAWcwkW-IoARapWjzr8X4LDaLq7rKF0QxGpt6_E9ZwyxUXPSGTdndLhZmZ87M8Z_CYQOGjy4QG56D3Bdx-2PrwaAFtonh6c3NZ63b8RhsDKXbNWhnU24Le_V1BacK56nLbnfN6y7qj37wJjlmiahIQxDcVIW_6l2DVzKL2aQYWAZuJQTDf9oQ8mOMErYc4gWbxYFTdRhDfavQKPyEIVF5CZGCrkdRix7RpgSPPW6QOUkscpqqF9plqgSByLXIY8bZv-0AckyqoLVDHtCVu4hbIK0vNREBaT48ahq8Ct7g9nEmtYBSSPJhvzWFaM7_bLYdtxA9_GpLsw0niKg8kK5NHoqbPaOq7nUQf3Wg0JKrGB8nq1iVhXX8kdDVLAjd4IqBsDTrhLzhZFWeMYXmS6K55mrXAQcLD61QhDC7NYwWXPHc3Ht49ZezrewevkqtcLUReXlcd1og_q6SWmkB8B-tCaaF3JSKvN79FsMP57beL-Cuxcuh1XRe8w7HW1yJL8V3ujcw53jO4F5_gz1ToB3fbPKOe2Fg128mETzAK0OGbwjVQ9YyvhYCvZKWvq3e---rwQshfSjUq-C-fPPFHPumPuu_fD0b9wfikPxgNRuNhh-_4pHcy7vZOh6cno37vXX_QGw2eO_yft3DSHQ9Pe0NUHb8b9XFB__k__m_xRA?type=png)](https://mermaid.live/edit#pako:eNp9lllvGjEQgP-K5ZdKFaUpR6C8pUkaUTVVGtJDFVJkdoeyymJvbUNDo_z3jr0HZhmHh0DmG4_Hc9lPPFEp8AlPcmHMRSZ-a7GeS4YfL2FTaUEXGvAveyrB81yGGveXj5mNsDOd2dUabJZEFD4olYOQEXq-guShZoy9fcsSJzHMroBtRZ6lmd2xAKulR8bqTP4O5Isdy-wrXLcrgN5JyUTETnEhrJhZ0XLFeMlSaaYK0MJmShp6OSy3Iha9K7DJKkoziUfZJM52RAPz03vBwKfNusiW8OfAc5EbxT59u76Zfvxy-ZVcd622EDF5CyKNohzjEF05e_GsM6t7mbRxiim900IaDPl6X43-RBblTmxYColIsdxcWYcKip3NzqdTZnbrhcpNbI8cYoG-w9KJoB9Y5TH28_rzvVX3zp0jj03pMqo4_4Jc0-59dwUvLDj9o57wVpw9YSOLdSYWeTQ1GBYM7r6RveVCaAMGO61aK2TKcBRstMTStA7kmzDK2ZLhqDCAWcwkW-IoARapWjzr8X4LDaLq7rKF0QxGpt6_E9ZwyxUXPSGTdndLhZmZ87M8Z_CYQOGjy4QG56D3Bdx-2PrwaAFtonh6c3NZ63b8RhsDKXbNWhnU24Le_V1BacK56nLbnfN6y7qj37wJjlmiahIQxDcVIW_6l2DVzKL2aQYWAZuJQTDf9oQ8mOMErYc4gWbxYFTdRhDfavQKPyEIVF5CZGCrkdRix7RpgSPPW6QOUkscpqqF9plqgSByLXIY8bZv-0AckyqoLVDHtCVu4hbIK0vNREBaT48ahq8Ct7g9nEmtYBSSPJhvzWFaM7_bLYdtxA9_GpLsw0niKg8kK5NHoqbPaOq7nUQf3Wg0JKrGB8nq1iVhXX8kdDVLAjd4IqBsDTrhLzhZFWeMYXmS6K55mrXAQcLD61QhDC7NYwWXPHc3Ht49ZezrewevkqtcLUReXlcd1og_q6SWmkB8B-tCaaF3JSKvN79FsMP57beL-Cuxcuh1XRe8w7HW1yJL8V3ujcw53jO4F5_gz1ToB3fbPKOe2Fg128mETzAK0OGbwjVQ9YyvhYCvZKWvq3e---rwQshfSjUq-C-fPPFHPumPuu_fD0b9wfikPxgNRuNhh-_4pHcy7vZOh6cno37vXX_QGw2eO_yft3DSHQ9Pe0NUHb8b9XFB__k__m_xRA)
 
 ## Implemented Features
 

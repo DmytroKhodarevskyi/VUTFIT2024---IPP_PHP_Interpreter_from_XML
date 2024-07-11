@@ -105,7 +105,6 @@ class XML_to_code {
     $program = $dom->getElementsByTagName('program')->item(0);
     $language = $program->getAttribute('language');
     if ($language != "IPPcode24") {
-    // if ($language != "IPPcode23") {
       throw new XmlSemanticErr_Exception("Invalid header");
     }
   }

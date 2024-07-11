@@ -56,13 +56,9 @@ class Setchar {
       $this->final_symb3 = mb_substr($this->final_symb3, 0, 1);
     }
 
-    $string_to_modify[$this->final_symb2] = $this->final_symb3;
+    $string_to_modify = substr_replace($string_to_modify, $this->final_symb3, intval($this->final_symb2), 1);
 
-    // $string_to_modify = $string_to_modify[0];
-
-    // if (gettype($string_to_modify) == "string") {
-      $frame->setVariable($var->name, strval($string_to_modify), "string");
-    // }
+    $frame->setVariable($var->name, strval($string_to_modify), "string");
   }
 
   
